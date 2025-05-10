@@ -1,0 +1,80 @@
+.navbar {
+  background: #fff;
+  padding: 10px 30px;
+  border-bottom: 1px solid #eee;
+}
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.banner {
+  background: #23272b;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  background: #dbeafe;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.optionBtn.selected {
+  background: #90cdf4;
+  font-weight: bold;
+}
+
+.optionBtn input[type='radio'] {
+  margin-right: 10px;
+}
+
+.navBtns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.actionBtns {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}

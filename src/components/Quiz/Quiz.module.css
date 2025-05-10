@@ -1,0 +1,121 @@
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  color: #22223b;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  background: #e0e7ff;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  color: #22223b;
+  font-weight: 500;
+}
+
+.optionBtn:hover:not(:disabled) {
+  background: #a5b4fc;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.optionBtn.selected {
+  background: #6366f1;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+}
+
+.optionBtn input[type='radio'] {
+  margin-right: 12px;
+}
+
+.navBtns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 18px 0;
+}
+
+.navBtns button {
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navBtns button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.navBtns button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.actionBtns {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+}
+
+.actionBtns button {
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(14,165,233,0.10);
+}
+
+.actionBtns button:hover {
+  background: #0ea5e9;
+  box-shadow: 0 2px 12px rgba(14,165,233,0.18);
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  .optionsGrid {
+    grid-template-columns: 1fr;
+  }
+  .actionBtns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
